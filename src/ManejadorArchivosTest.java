@@ -63,7 +63,6 @@ public class ManejadorArchivosTest {
         manejador.añadirEstudiante(e1);
         manejador.añadirEstudiante(e2);
 
-        // Buscar a Carlos
         List<Estudiante> estudiantes = manejador.leerEstudiantes();
         Estudiante encontrado = null;
         for (Estudiante estudiante : estudiantes) {
@@ -97,7 +96,6 @@ public class ManejadorArchivosTest {
 
     @Test
     public void testLeerEstudiantes() {
-        // Añadir varios estudiantes
         manejador.añadirEstudiante(new Estudiante("Pepe", 8.0));
         manejador.añadirEstudiante(new Estudiante("Juan", 9.0));
 
